@@ -14,13 +14,11 @@ client = discord.Client()
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
 
-if message.author == client.user:
-    return
-
 # BOT COMMANDS
 # !test
-@client.event
-async def on_message(message):
-    if message.content.startsWith(prefix + "test"):
-        await ctx.send("test")
+@bot.command
+async def test(message):
+        await message.send("test")
+
+
 client.run(TOKEN)
