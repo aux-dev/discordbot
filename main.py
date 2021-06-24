@@ -22,5 +22,5 @@ if message.author == client.user:
 @client.event
 async def on_message(message):
     if message.content.startsWith(prefix + "test"):
-        await.ctx.send("test")
+        await ctx.send("test")
 client.run(TOKEN)
