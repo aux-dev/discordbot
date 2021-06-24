@@ -2,8 +2,9 @@ import os
 import discord
 from dotenv import load_dotenv
 from discord.ext import commands
+from discord.ext.commands import Bot
 
-client = commands.Bot(command_prefix='!')
+bot = Bot('!')
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -19,5 +20,5 @@ async def on_ready():
 @bot.command()
 async def test(ctx):
     await ctx.send("test")
-
-client.run(TOKEN)
+    
+bot.run("TOKEN")
