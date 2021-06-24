@@ -21,4 +21,4 @@ async def on_ready():
 async def test(ctx):
     await ctx.send("test")
     
-bot.run("TOKEN")
+bot.run(TOKEN)
