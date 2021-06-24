@@ -17,12 +17,12 @@ async def on_ready():
 
 # BOT COMMANDS
 # !test
-@client.command()
+@bot.command()
 async def test(ctx):
     await ctx.send("test")
 
 # !help
-@client.command()
+@bot.command()
 async def help(ctx):
     help=discord.Embed(title="Bot Commands", url="https://github.com/aux-dev/discordbot", color=0xF5F5FF)
     help.add_field(name="Moderation", value="~~`mute`, `kick`, `ban`~~")
