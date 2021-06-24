@@ -18,15 +18,15 @@ async def on_ready():
 # BOT COMMANDS
 # !test
 @bot.command()
-async def test(ctx):
-    await ctx.send("test")
+async def invite(ctx):
+    await ctx.send("https://discord.com/api/oauth2/authorize?client_id=664541684373389332&permissions=8&scope=bot")
 
-# !help
-@bot.command()
-async def help(ctx):
-    help=discord.Embed(title="Bot Commands", url="https://github.com/aux-dev/discordbot", color=0xF5F5FF)
-    help.add_field(name="Moderation", value="~~`mute`, `kick`, `ban`~~")
-    help.add_field(name="Miscellaneous", value="`help`, `invite`")
-    help.set_footer(text="v0.0.2 beta")
+# !help - under development
+#@bot.command()
+#async def help(ctx):
+#    help=discord.Embed(title="Bot Commands", url="https://github.com/aux-dev/discordbot", color=0xF5F5FF)
+#    help.add_field(name="Moderation", value="~~`mute`, `kick`, `ban`~~")
+#    help.add_field(name="Miscellaneous", value="`help`, `invite`")
+#    help.set_footer(text="v0.0.2 beta")
     
 bot.run(TOKEN)
