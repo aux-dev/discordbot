@@ -1,7 +1,5 @@
 import os
-import json
 import discord
-import dotenv
 from dotenv import load_dotenv
 
 prefix = ['!']
