@@ -18,7 +18,7 @@ async def on_ready():
 # !test
 @bot.command
 async def test(message):
-        await message.send("test")
+    await message.send("test")
 
 
 client.run(TOKEN)
