@@ -17,7 +17,7 @@ async def on_ready():
 
 # BOT COMMANDS
 # !test
-@bot.command()
+@client.command()
 async def test(ctx):
     await ctx.send("test")
     
